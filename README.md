@@ -111,6 +111,60 @@ Create Repository
   # PART 2: Simulating Tom and Jerry's Team Work.
 This guide will walk you through the basics of using GitHub, including navigating a project directory, creating branches, making changes, pulling lastest changes from the central repository, and collaborating with others. We'll simulate workflows for two contributors, Tom and Jerry.
 
+## Navigating the Project Directory and Checking Branches.
+ ### Procedure:
+ 1. Navigate to the project directory you cloned earlier using the command: 
+
+ `cd tom-jerry`
+
+ 2. Check the current branch in the repository using:
+
+  `git branch` command
+
+  This will display all the branches in the repository.
+
+  3. Creat a new branch call `update-navigation` using this command:
+
+  git checkout -b update-navigation
+
+  4. ***Verify the new branch*** by running git branch again. You should see the newly created branch `listed.
+
+  ![git branch](./Img/git%20branch.png)
+
+  ## Making Changes and Staging Them:
+
+  Procedures:
+  1. Open the index.html file in your code editor. Since this file already exists in the main branch, it will also exist in the new branch you created.
+  2. Add the following content to the index file.
+
+  This is Tom adding Navigation to the file.
+
+  3. check the status of your file if it has been stage since you added a comment to the index.html file, run this command:
+
+  `git status`
+
+  ![new git](./Img/new%20git.png)
+
+  4. You can see from the picture above that the new comment has not bwwn staged, so use the `git add .` command to stage it.
+
+  `git add .`
+
+  5. Confirm the staged changes by running `git status` again. The changes should now be staged and ready to commit.
+
+  ![staged](./Img/staged.png)
+
+  ## Commit And Push Changes:
+  `git commit -m "update the index.html navigation bar"
+
+  6. Push the Branch to github using this command:
+  `git push origin update-navigation`
+
+  ![git update](./Img/git%20update%20navigation.png)
+
+
+
+
+
 
 
 
